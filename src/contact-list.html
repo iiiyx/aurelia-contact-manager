@@ -1,0 +1,18 @@
+<template>
+  <div class="contact-list">
+    <ul class="list-group">
+      <li class="list-group-item success" >
+        <a route-href="route: new" class="btn btn-info">
+          <h4 class="list-group-item-heading">Add</h4>
+          <p class="list-group-item-text">Push here to add a new contact</p>
+        </a>
+      </li>
+      <li repeat.for="contact of contacts" class="list-group-item ${contact.id == $parent.selectedId ? 'active' : ''}">
+        <a route-href="route: contacts; params.bind: {id:contact.id}" >
+          <h4 class="list-group-item-heading">${contact.firstName} ${contact.lastName}</h4>
+          <p class="list-group-item-text">${contact.email}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</template>
