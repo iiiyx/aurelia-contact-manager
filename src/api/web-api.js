@@ -11,36 +11,36 @@ let contacts = [
     firstName: 'John',
     lastName: 'Tolkien',
     email: 'tolkien@inklings.com',
-    phoneNumber: '867-5309'
+    phoneNumber: '867-5309',
   },
   {
     id: getId(),
     firstName: 'Clive',
     lastName: 'Lewis',
     email: 'lewis@inklings.com',
-    phoneNumber: '867-5309'
+    phoneNumber: '867-5309',
   },
   {
     id: getId(),
     firstName: 'Owen',
     lastName: 'Barfield',
     email: 'barfield@inklings.com',
-    phoneNumber: '867-5309'
+    phoneNumber: '867-5309',
   },
   {
     id: getId(),
     firstName: 'Charles',
     lastName: 'Williams',
     email: 'williams@inklings.com',
-    phoneNumber: '867-5309'
+    phoneNumber: '867-5309',
   },
   {
     id: getId(),
     firstName: 'Roger',
     lastName: 'Green',
     email: 'green@inklings.com',
-    phoneNumber: '867-5309'
-  }
+    phoneNumber: '867-5309',
+  },
 ];
 
 export class WebAPI {
@@ -55,7 +55,7 @@ export class WebAPI {
             id: x.id,
             firstName: x.firstName,
             lastName: x.lastName,
-            email: x.email
+            email: x.email,
           };
         });
         resolve(results);
